@@ -1,20 +1,17 @@
-import BgTriangle from "../../icons/bg-triangle";
-import PaperBorder from "../global/paper-border";
-import RockBorder from "../global/rock-border";
-import ScissorsBorder from "../global/scissors-border";
+
+import { useGameStore } from "../../../store";
+import IsPlayingGame from "./is-playing-game";
+import StartIngGame from "./starting-game";
 
 const PlayGameSection = () => {
+  const isPlayingGame = useGameStore((state:any) => state.isPlayingGame)
   return (
-    <div className="md:w-1/2 w-full mx-auto my-20 bg-cover relative">
-      <div className="flex justify-center items-center pt-16">
-        <BgTriangle />
-      </div>
+    <div className="md:w-1/2 w-full mx-auto my-20 bg-cover relative h-auto">
+      {!isPlayingGame && (
+       <StartIngGame />
+      )}
 
-      <div className="relative z-20 bottom-[287px] left-0 right-0 grid grid-cols-2">
-        <PaperBorder />
-        <ScissorsBorder />
-        <RockBorder />
-      </div>
+      {isPlayingGame && <IsPlayingGame />}
     </div>
   );
 };

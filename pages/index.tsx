@@ -10,7 +10,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.svg" />
       </Head>
-      <main className="h-full bg-gradient-to-r from-bgColorOne to-bgColorTwo md:pt-14 pt-10 font-SemiCondensed font-semibold">
+      <main className="md:pt-14 pt-10">
       <HomePage />
       </main>
     </>

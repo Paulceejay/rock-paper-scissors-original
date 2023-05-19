@@ -4,11 +4,11 @@ const RulesIconSvg = () => {
         <defs>
           <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
             <stop offset="0%" stop-color="#FFF" stop-opacity=".097" />
-            <stop offset="100%" stop-color="#FFF" stop-opacity="0" />
+            <stop offset="100%" stopColor="#FFF" stopOpacity="0" />
           </linearGradient>
           <linearGradient id="b" x1="50%" x2="50%" y1="0%" y2="100%">
-            <stop offset="0%" stop-color="#FFF" stop-opacity=".097" />
-            <stop offset="100%" stop-color="#FFF" stop-opacity="0" />
+            <stop offset="0%" stopColor="#FFF" stopOpacity=".097" />
+            <stop offset="100%" stopColor="#FFF" stopOpacity="0" />
           </linearGradient>
         </defs>
         <g fill="none" fill-rule="evenodd">

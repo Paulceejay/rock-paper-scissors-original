@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { useScoreStore } from "../../../store";
+import { useGameStore } from "../../../store";
 
 const ScoreSection = () => {
-  const gameScore = useScoreStore((state: any) => state.scores);
+  const gameScore = useGameStore((state: any) => state.scores);
   return (
     <div className="flex justify-between p-5 border-[3px] border-headerOutline rounded-2xl">
       <div className="bg-transparent text-white flex justify-center items-center">
